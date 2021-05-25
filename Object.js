@@ -16,7 +16,7 @@ exports.Object = () => {
         },
         nataionlity: '',
         display() {
-            console.log('name is Arun')
+            console.log(`name is ${this.name}`)
         },
         displaySides() {
             console.log("Square has 4 sides")
@@ -38,8 +38,8 @@ exports.Object = () => {
             }
         },
         nataionlity: '',
-        display() {
-            console.log('name is Arun')
+        get display() {
+            return this.name
         },
         displaySides() {
             console.log("Square has 4 sides")
@@ -71,29 +71,21 @@ exports.Object = () => {
 
 
 
-    var newPerson = new Object()
-
-    newPerson = {
-        name: ''
-    }
-
-    console.log()
-
 
     // two way of calling function in object
-    person1.displayName()
-    person1['displayName']()
+    person1.display()
+    person1['displayName']()                 
 
-    person1['salary'] = 21000
+    // person1['salary'] = 21000
 
-    console.log('salary is',person1['salary'])
+    // console.log('salary is',person1['salary'])
 
-    console.log(person1)
+    // console.log(person1)
 
-    // deleting salary item
-    delete person1['salary']
-    delete person1.age
+    // // deleting salary item
+    // delete person1['salary']
+    // delete person1.age
 
-    console.log(person1)
+    // console.log(person1)
     // console.log(person)
 }
