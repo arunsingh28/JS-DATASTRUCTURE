@@ -7,7 +7,16 @@ exports.Map = () => {
 
 
 }
-const person = ['Arun','Varun','Tarun','Garima','Shivangi','Shalini','Annu','Riya','Tanmay']
+const person = ['Arun', 'Varun', 'Tarun', 'Garima', 'Shivangi', 'Shalini', 'Annu', 'Riya', 'Tanmay']
 
-console.log(person.map(i => i))
 
+// map
+// console.log(person.map(i => i))
+
+
+
+// filter
+console.log(person.filter((i, index) => {
+    console.log('index:',index)
+    return i === 'Arun'
+}))
