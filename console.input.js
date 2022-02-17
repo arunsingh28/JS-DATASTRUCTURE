@@ -1,6 +1,6 @@
 const readline = require('readline')
 
-const rl = readline.Interface({
+const rl = readline.CreateInterface({
     input: process.stdin,
     output: process.stdout
 })
